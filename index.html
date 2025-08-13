@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nova — Design System & UI Framework</title>
+    <meta name="description" content="A performance-focused design system for modern web applications with seamless animations and accessibility built-in." />
+    <meta name="keywords" content="design system, UI framework, web components, accessibility, performance" />
+    <meta name="author" content="Nova" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nova.design/" />
+    <meta property="og:title" content="Nova — Design System & UI Framework" />
+    <meta property="og:description" content="A performance-focused design system for modern web applications with seamless animations and accessibility built-in." />
+    <meta property="og:image" content="https://nova.design/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nova.design/" />
+    <meta property="twitter:title" content="Nova — Design System & UI Framework" />
+    <meta property="twitter:description" content="A performance-focused design system for modern web applications with seamless animations and accessibility built-in." />
+    <meta property="twitter:image" content="https://nova.design/og-image.jpg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="Nova home">
+          <span class="brand-accent">✦</span> Nova
+          <span class="brand-tagline">Design System</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="menu" class="menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#benefits">Benefits</a></li>
+            <li><a class="nav-link cta" href="contact.html">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section fade-seq">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="display">Build fast. Look sharp.</h1>
+            <p class="lede">
+              A performance-focused design system for modern web applications with seamless animations and accessibility built-in.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="about.html">Learn more</a>
+              <a class="btn btn-secondary" href="contact.html">Try Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Why Choose Nova?</h2>
+            <p class="section-subtitle">Built for developers who care about quality and performance</p>
+          </div>
+          <div class="grid-3">
+            <div class="card glass benefit">
+              <div class="card-body">
+                <div class="icon">🚀</div>
+                <h3>Performance First</h3>
+                <p>Optimized components that load 3x faster with lazy loading and tree-shaking.</p>
+              </div>
+            </div>
+            <div class="card glass benefit">
+              <div class="card-body">
+                <div class="icon">✨</div>
+                <h3>Polish & Polish</h3>
+                <p>Buttery-smooth animations and hover effects that delight users.</p>
+              </div>
+            </div>
+            <div class="card glass benefit">
+              <div class="card-body">
+                <div class="icon">♿</div>
+                <h3>Accessible by Default</h3>
+                <p>WCAG 2.1 AA compliant with screen reader support and keyboard navigation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Core Features</h2>
+            <p class="section-subtitle">Everything you need to build exceptional user experiences</p>
+          </div>
+          <div class="grid-3">
+            <div class="card glass feature">
+              <div class="card-body">
+                <div class="icon">⚡</div>
+                <h3>Performance</h3>
+                <p>Lightweight assets and motion that respects user preferences.</p>
+              </div>
+            </div>
+            <div class="card glass feature">
+              <div class="card-body">
+                <div class="icon">🎨</div>
+                <h3>Design Tokens</h3>
+                <p>Consistent spacing, colors, and typography across all components.</p>
+              </div>
+            </div>
+            <div class="card glass feature">
+              <div class="card-body">
+                <div class="icon">📱</div>
+                <h3>Responsive</h3>
+                <p>Mobile-first approach with breakpoint utilities and flexible layouts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-proof section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Trusted by Teams Worldwide</h2>
+            <p class="section-subtitle">Join thousands of developers building better products</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat">
+              <div class="stat-number">10K+</div>
+              <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">99.9%</div>
+              <div class="stat-label">Uptime</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">3x</div>
+              <div class="stat-label">Faster Loading</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-title">Nova</h3>
+            <p class="footer-description">
+              A performance-focused design system for modern web applications. 
+              Built with accessibility, performance, and developer experience in mind.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="GitHub" class="social-link">📱</a>
+              <a href="#" aria-label="Twitter" class="social-link">🐦</a>
+              <a href="#" aria-label="LinkedIn" class="social-link">💼</a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Nova. All rights reserved.</p>
+          <p>Made with ❤️ for developers</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
+
+
