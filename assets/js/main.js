@@ -79,29 +79,19 @@
     });
   }
 
-  // Sticky header with scroll effects
+  // Sticky header with scroll effects (no hiding)
   function initStickyHeader() {
     const header = document.querySelector('.site-header');
-    let lastScrollY = window.scrollY;
     
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
       
-      // Add scrolled class for styling
+      // Add scrolled class for styling (background blur effect)
       if (currentScrollY > 100) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
-      
-      // Hide/show header on scroll (optional)
-      if (currentScrollY > lastScrollY && currentScrollY > 200) {
-        header.style.transform = 'translateY(-100%)';
-      } else {
-        header.style.transform = 'translateY(0)';
-      }
-      
-      lastScrollY = currentScrollY;
       
       // Update active navigation based on scroll position
       updateActiveNavigationOnScroll();
