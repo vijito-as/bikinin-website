@@ -1282,4 +1282,371 @@ blockquote {
   }
 }
 
+/* Problem hook section */
+.problem-hook {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.problem-hook .section-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* Pricing cards */
+.pricing-card {
+  height: 100%;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.pricing-card.starter {
+  border-color: var(--success);
+}
+
+.pricing-card.business {
+  border-color: var(--primary);
+}
+
+.pricing-card.premium {
+  border-color: var(--accent);
+}
+
+.package-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.package-badge.starter {
+  background: rgba(134, 239, 172, 0.2);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.package-badge.business {
+  background: rgba(122, 162, 247, 0.2);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.package-badge.premium {
+  background: rgba(192, 153, 255, 0.2);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.package-price {
+  color: var(--accent-orange);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.package-features li {
+  padding: 0.5rem 0;
+  color: var(--muted);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.package-features li::before {
+  content: "✓";
+  color: var(--success);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Portfolio grid 4 */
+.grid-4 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 820px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Benefits grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all .3s ease;
+}
+
+.benefit-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary);
+  transform: translateX(5px);
+}
+
+.checkmark {
+  color: var(--success);
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 1.5rem;
+}
+
+/* Process steps */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.process-step {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.process-step::after {
+  content: "→";
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--primary);
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .process-step:not(:last-child)::after {
+    display: block;
+  }
+}
+
+.step-number {
+  width: 3rem;
+  height: 3rem;
+  background: var(--primary);
+  color: var(--bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.process-step h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.process-step p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Enhanced CTA section */
+.final-cta {
+  background: linear-gradient(135deg, rgba(255, 138, 76, 0.15), rgba(192, 153, 255, 0.15));
+  border-top: 1px solid var(--border);
+}
+
+.btn-large {
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cta-guarantee {
+  font-size: 1rem !important;
+  color: var(--accent-orange);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 768px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-step::after {
+    display: none;
+  }
+  
+  .package-badge {
+    position: static;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .package-price {
+    text-align: center;
+  }
+}
+
+/* Enhanced header effects */
+.site-header {
+  transition: all .3s ease;
+}
+
+.site-header.scrolled {
+  background: linear-gradient(180deg, rgba(11, 13, 16, 0.98), rgba(11, 13, 16, 0.95));
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Active navigation states */
+.nav-link.active {
+  color: var(--primary);
+  background: rgba(122, 162, 247, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+/* Smooth transitions for all interactive elements */
+.card, .btn, .nav-link, .social-link, .credential-badge, .pricing-card, .benefit-item {
+  transition: all .3s ease;
+}
+
+/* Enhanced pricing card animations */
+.pricing-card:hover .package-badge {
+  transform: scale(1.1);
+}
+
+.pricing-card:hover .package-price {
+  color: var(--text);
+}
+
+/* Process step animations */
+.process-step:hover .step-number {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(122, 162, 247, 0.5);
+}
+
+.process-step:hover .step-icon {
+  transform: scale(1.1);
+}
+
+/* Enhanced benefit item animations */
+.benefit-item:hover .checkmark {
+  transform: scale(1.2);
+  color: var(--success);
+}
+
+/* Portfolio card enhancements */
+.portfolio-card:hover .placeholder-image {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.portfolio-card:hover .tech-badge {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced mobile navigation */
+@media (max-width: 768px) {
+  .site-header {
+    backdrop-filter: blur(15px);
+  }
+  
+  .nav-link.active {
+    background: rgba(122, 162, 247, 0.15);
+  }
+  
+  .process-step::after {
+    display: none;
+  }
+}
+
+/* Loading animations for elements */
+.animate-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced button states */
+.btn:active {
+  transform: scale(0.98) translateY(0);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(122, 162, 247, 0.2);
+}
+
+/* Enhanced card focus states */
+.card:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 

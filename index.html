@@ -30,8 +30,8 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="Beranda Bikinin Website">
-          <span class="brand-accent">Bikinin Website
+        <a href="#home" class="brand" aria-label="Beranda Bikinin Website">
+          <span class="brand-accent">Bikinin Website</span>
         </a>
         <nav class="site-nav" aria-label="Navigasi utama">
           <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Buka/tutup navigasi">
@@ -40,30 +40,27 @@
             <span class="bar"></span>
           </button>
           <ul id="menu" class="menu">
-            <li><a class="nav-link" href="index.html">Beranda</a></li>
-            <li><a class="nav-link" href="about.html">Tentang</a></li>
+            <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#services">Layanan</a></li>
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link" href="#process">Proses</a></li>
-            <li><a class="nav-link cta" href="contact.html">Konsultasi</a></li>
+            <li><a class="nav-link" href="#contact">Kontak</a></li>
+            <li><a class="nav-link cta" href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan layanan website. Bisa konsultasi?" target="_blank">Konsultasi Gratis</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero section fade-seq">
+      <!-- Hero Section -->
+      <section id="home" class="hero section fade-seq">
         <div class="container">
           <div class="hero-content">
             <h1 class="display">BIKININ WEBSITE</h1>
-            <p class="lede">
-              Web Developer untuk Bisnis Indonesia
-            </p>
             <p class="hero-subtitle">
-              Dari konsep hingga website live hanya dalam 2 minggu
+              Dari konsep hingga website live kurang dari 1 minggu
             </p>
             <div class="actions">
-              <a class="btn btn-primary" href="https://wa.me/6281234567890?text=Halo, saya ingin konsultasi tentang website" target="_blank">Konsultasi Gratis</a>
+              <a class="btn btn-primary" href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan layanan website. Bisa konsultasi?" target="_blank">Konsultasi via WhatsApp</a>
             </div>
           </div>
           
@@ -76,7 +73,8 @@
         </div>
       </section>
 
-      <section id="problem-stats" class="problem-stats section">
+      <!-- Problem/Hook Section -->
+      <section id="problem-hook" class="problem-hook section">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">84% pelanggan mengecek website sebelum membeli produk Anda</h2>
@@ -87,7 +85,7 @@
           <div class="stats-grid">
             <div class="stat">
               <div class="stat-number">75%</div>
-              <div class="stat-label">pelanggan menilai kredibilitas dari website</div>
+              <div class="stat-label">menilai kredibilitas dari website</div>
             </div>
             <div class="stat">
               <div class="stat-number">50%</div>
@@ -95,75 +93,77 @@
             </div>
             <div class="stat">
               <div class="stat-number">95%</div>
-              <div class="stat-label">kesan pertama ditentukan dari desain</div>
+              <div class="stat-label">kesan pertama dari desain</div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Services Section -->
       <section id="services" class="services section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Layanan yang Kami Tawarkan</h2>
-            <p class="section-subtitle">Solusi website lengkap untuk berbagai kebutuhan bisnis Anda</p>
+            <h2 class="section-title">Paket Website yang Kami Tawarkan</h2>
+            <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan dan budget bisnis Anda</p>
           </div>
           <div class="grid-3">
-            <div class="card glass service-card">
+            <div class="card glass pricing-card starter">
               <div class="card-body">
-                <div class="service-icon">🏢</div>
+                <div class="package-badge starter">STARTER</div>
+                <div class="package-price">Rp 5 Juta</div>
                 <h3>Company Profile</h3>
-                <div class="service-price">Mulai dari Rp 5.000.000</div>
-                <p>Website profesional untuk membangun kredibilitas bisnis</p>
-                <ul class="service-features">
+                <ul class="package-features">
                   <li>5-8 halaman profesional</li>
                   <li>Mobile responsive design</li>
                   <li>Basic SEO optimization</li>
-                  <li>1 bulan maintenance gratis</li>
+                  <li>1 bulan maintenance</li>
+                  <li>Perfect untuk UMKM</li>
                 </ul>
-                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan paket Company Profile" class="btn btn-secondary" target="_blank">Konsultasi Sekarang</a>
+                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan paket Starter (Company Profile) Rp 5 juta. Bisa konsultasi lebih lanjut?" class="btn btn-primary" target="_blank">Pesan Sekarang</a>
               </div>
             </div>
-            <div class="card glass service-card">
+            <div class="card glass pricing-card business">
               <div class="card-body">
-                <div class="service-icon">🛒</div>
-                <h3>Toko Online</h3>
-                <div class="service-price">Mulai dari Rp 12.000.000</div>
-                <p>E-commerce lengkap dengan sistem pembayaran terintegrasi</p>
-                <ul class="service-features">
-                  <li>Product catalog lengkap</li>
-                  <li>Shopping cart functionality</li>
-                  <li>Payment gateway integration</li>
-                  <li>Admin panel management</li>
+                <div class="package-badge business">BUSINESS</div>
+                <div class="package-price">Rp 12 Juta</div>
+                <h3>Toko Online Lengkap</h3>
+                <ul class="package-features">
+                  <li>E-commerce lengkap</li>
+                  <li>Payment gateway</li>
+                  <li>Product management</li>
+                  <li>3 bulan maintenance</li>
+                  <li><strong>Best seller!</strong></li>
                 </ul>
-                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan paket Toko Online" class="btn btn-secondary" target="_blank">Konsultasi Sekarang</a>
+                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan paket Business (Toko Online) Rp 12 juta. Bisa konsultasi lebih lanjut?" class="btn btn-primary" target="_blank">Pesan Sekarang</a>
               </div>
             </div>
-            <div class="card glass service-card">
+            <div class="card glass pricing-card premium">
               <div class="card-body">
-                <div class="service-icon">⚙️</div>
-                <h3>Aplikasi Web Custom</h3>
-                <div class="service-price">Mulai dari Rp 20.000.000</div>
-                <p>Solusi khusus sesuai kebutuhan bisnis Anda</p>
-                <ul class="service-features">
+                <div class="package-badge premium">PREMIUM</div>
+                <div class="package-price">Rp 20 Juta</div>
+                <h3>Custom Web Application</h3>
+                <ul class="package-features">
                   <li>Custom functionality</li>
-                  <li>Advanced admin dashboard</li>
-                  <li>Database integration</li>
-                  <li>Scalable architecture</li>
+                  <li>Advanced features</li>
+                  <li>Admin dashboard</li>
+                  <li>6 bulan maintenance</li>
+                  <li>Untuk bisnis serius</li>
                 </ul>
-                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan paket Aplikasi Web Custom" class="btn btn-secondary" target="_blank">Konsultasi Sekarang</a>
+                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan paket Premium (Custom Web App) Rp 20 juta. Bisa konsultasi lebih lanjut?" class="btn btn-primary" target="_blank">Pesan Sekarang</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Portfolio Showcase -->
       <section id="portfolio" class="portfolio section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Portfolio Kami</h2>
+            <h2 class="section-title">Website yang Sudah Kami Buat</h2>
             <p class="section-subtitle">Beberapa project yang telah kami selesaikan dengan sukses</p>
           </div>
-          <div class="grid-3">
+          <div class="grid-4">
             <div class="card glass portfolio-card">
               <div class="portfolio-image">
                 <div class="placeholder-image">🏪</div>
@@ -173,9 +173,8 @@
                 <div class="tech-stack">
                   <span class="tech-badge">React</span>
                   <span class="tech-badge">Next.js</span>
-                  <span class="tech-badge">Tailwind</span>
                 </div>
-                <p>Website restaurant dengan booking system dan menu digital yang modern dan user-friendly.</p>
+                <p>Website restaurant dengan booking system dan menu digital yang modern.</p>
               </div>
             </div>
             <div class="card glass portfolio-card">
@@ -187,9 +186,8 @@
                 <div class="tech-stack">
                   <span class="tech-badge">Vue.js</span>
                   <span class="tech-badge">Node.js</span>
-                  <span class="tech-badge">MongoDB</span>
                 </div>
-                <p>E-commerce fashion dengan sistem inventory, payment gateway, dan admin panel lengkap.</p>
+                <p>E-commerce fashion dengan sistem inventory dan payment gateway.</p>
               </div>
             </div>
             <div class="card glass portfolio-card">
@@ -201,100 +199,104 @@
                 <div class="tech-stack">
                   <span class="tech-badge">HTML5</span>
                   <span class="tech-badge">CSS3</span>
-                  <span class="tech-badge">JavaScript</span>
                 </div>
-                <p>Website company profile untuk startup tech dengan animasi modern dan responsive design.</p>
+                <p>Website company profile untuk startup tech dengan animasi modern.</p>
+              </div>
+            </div>
+            <div class="card glass portfolio-card">
+              <div class="portfolio-image">
+                <div class="placeholder-image">📊</div>
+              </div>
+              <div class="card-body">
+                <h3>Dashboard Analytics</h3>
+                <div class="tech-stack">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Chart.js</span>
+                </div>
+                <p>Dashboard analytics dengan visualisasi data yang interaktif.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="vision" class="vision section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Visi Kami</h2>
-            <p class="section-subtitle">
-              Menjadi partner terpercaya untuk transformasi digital bisnis Indonesia. Kami memahami tantangan bisnis lokal dan menyediakan solusi website yang sesuai dengan kebutuhan pasar Indonesia.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="process" class="process section">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Bagaimana Kami Bekerja</h2>
-            <p class="section-subtitle">Proses kerja yang transparan dan terstruktur untuk hasil terbaik</p>
-          </div>
-          <div class="grid-4">
-            <div class="card glass process-step">
-              <div class="card-body">
-                <div class="process-icon">1️⃣</div>
-                <h3>Konsultasi & Perencanaan</h3>
-                <p>Diskusi mendalam tentang kebutuhan dan tujuan website Anda</p>
-              </div>
-            </div>
-            <div class="card glass process-step">
-              <div class="card-body">
-                <div class="process-icon">2️⃣</div>
-                <h3>Desain & Development</h3>
-                <p>Pembuatan mockup dan pengembangan website sesuai spesifikasi</p>
-              </div>
-            </div>
-            <div class="card glass process-step">
-              <div class="card-body">
-                <div class="process-icon">3️⃣</div>
-                <h3>Testing & Launch</h3>
-                <p>Quality assurance menyeluruh sebelum website go live</p>
-              </div>
-            </div>
-            <div class="card glass process-step">
-              <div class="card-body">
-                <div class="process-icon">4️⃣</div>
-                <h3>Maintenance & Support</h3>
-                <p>Dukungan berkelanjutan untuk memastikan website tetap optimal</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!-- Why Choose Us -->
       <section id="why-choose-us" class="why-choose-us section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Mengapa Memilih Kami?</h2>
+            <h2 class="section-title">Mengapa Pilih Kami?</h2>
             <p class="section-subtitle">Keunggulan yang membedakan kami dari yang lain</p>
           </div>
-          <div class="benefits-list">
+          <div class="benefits-grid">
             <div class="benefit-item">
               <span class="checkmark">✓</span>
-              <span>Komunikasi yang jelas dan transparan sepanjang project</span>
+              <span>Response WhatsApp dalam 2 jam</span>
             </div>
             <div class="benefit-item">
               <span class="checkmark">✓</span>
-              <span>Response time maksimal 24 jam untuk support</span>
+              <span>Garansi revisi unlimited</span>
             </div>
             <div class="benefit-item">
               <span class="checkmark">✓</span>
-              <span>Garansi revisi hingga Anda puas dengan hasilnya</span>
+              <span>Domain + hosting kami urus</span>
             </div>
             <div class="benefit-item">
               <span class="checkmark">✓</span>
-              <span>Penanganan domain dan hosting secara menyeluruh</span>
+              <span>Bisa bayar cicil 2x</span>
             </div>
             <div class="benefit-item">
               <span class="checkmark">✓</span>
-              <span>Sistem pembayaran fleksibel dengan cicilan</span>
+              <span>Website siap dalam 2 minggu</span>
+            </div>
+            <div class="benefit-item">
+              <span class="checkmark">✓</span>
+              <span>Maintenance & support 24/7</span>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Process Steps -->
+      <section id="process" class="process section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Cara Kerja Kami Simple</h2>
+            <p class="section-subtitle">Proses kerja yang transparan dan terstruktur untuk hasil terbaik</p>
+          </div>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-icon">💬</div>
+              <h3>Chat</h3>
+              <p>Konsultasi kebutuhan di WhatsApp</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-icon">🎨</div>
+              <h3>Design</h3>
+              <p>Buat mockup sesuai request</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-icon">⚙️</div>
+              <h3>Build</h3>
+              <p>Development website</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-icon">🚀</div>
+              <h3>Launch</h3>
+              <p>Go live + training</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
       <section id="testimonials" class="testimonials section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Testimoni Klien</h2>
+            <h2 class="section-title">Kata Klien Kami</h2>
             <p class="section-subtitle">Apa kata klien tentang layanan kami</p>
           </div>
           <div class="grid-2">
@@ -302,11 +304,11 @@
               <div class="card-body">
                 <div class="testimonial-avatar">👨‍💼</div>
                 <blockquote>
-                  "Website yang dihasilkan sangat memuaskan, proses pengerjaannya profesional dan komunikasinya lancar. Highly recommended!"
+                  "Website kami jadi profesional banget, orderan naik 200% dalam 3 bulan!"
                 </blockquote>
                 <div class="testimonial-author">
                   <strong>Budi Santoso</strong>
-                  <span>Owner Warung Sederhana</span>
+                  <span>Warung Sederhana</span>
                 </div>
               </div>
             </div>
@@ -314,11 +316,11 @@
               <div class="card-body">
                 <div class="testimonial-avatar">👩‍💼</div>
                 <blockquote>
-                  "Kualitas website melebihi ekspektasi, loading speed sangat cepat, dan yang terpenting omzet naik 200% setelah launch."
+                  "Prosesnya cepat, hasilnya melebihi ekspektasi. Highly recommended!"
                 </blockquote>
                 <div class="testimonial-author">
                   <strong>Sarah Dewi</strong>
-                  <span>Founder Beauty Brand</span>
+                  <span>Beauty Brand</span>
                 </div>
               </div>
             </div>
@@ -326,75 +328,77 @@
         </div>
       </section>
 
+      <!-- FAQ Section -->
       <section id="faq" class="faq section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            <h2 class="section-title">Yang Sering Ditanyakan</h2>
             <p class="section-subtitle">Temukan jawaban untuk pertanyaan umum seputar layanan kami</p>
           </div>
           <div class="faq-list">
             <div class="faq-item">
               <div class="faq-question">
-                <h3>Berapa budget minimum untuk pembuatan website?</h3>
+                <h3>Berapa budget minimum untuk website?</h3>
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-answer">
-                <p>Untuk company profile basic, investasi dimulai dari Rp 5.000.000</p>
+                <p>Budget minimum untuk website company profile dimulai dari Rp 5 juta. Untuk toko online mulai dari Rp 12 juta.</p>
               </div>
             </div>
             <div class="faq-item">
               <div class="faq-question">
-                <h3>Apakah bisa pembayaran secara bertahap?</h3>
+                <h3>Bisa bayar cicil tidak?</h3>
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-answer">
-                <p>Ya, kami menerima pembayaran 50% di awal dan 50% saat selesai</p>
+                <p>Ya, kami menerima pembayaran cicil 2x: 50% di awal dan 50% saat website selesai.</p>
               </div>
             </div>
             <div class="faq-item">
               <div class="faq-question">
-                <h3>Bagaimana dengan domain dan hosting?</h3>
+                <h3>Domain dan hosting gimana?</h3>
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-answer">
-                <p>Kami akan mengurus seluruh kebutuhan teknis termasuk domain dan hosting</p>
+                <p>Kami akan mengurus seluruh kebutuhan teknis termasuk domain dan hosting sesuai paket yang dipilih.</p>
               </div>
             </div>
             <div class="faq-item">
               <div class="faq-question">
-                <h3>Berapa lama proses pengerjaan website?</h3>
+                <h3>Berapa lama pengerjaannya?</h3>
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-answer">
-                <p>Tergantung kompleksitas, rata-rata 1-3 minggu untuk completion</p>
+                <p>Rata-rata website siap dalam 2 minggu, tergantung kompleksitas dan feedback dari klien.</p>
               </div>
             </div>
             <div class="faq-item">
               <div class="faq-question">
-                <h3>Apakah ada garansi dan maintenance?</h3>
+                <h3>Ada garansi tidak?</h3>
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-answer">
-                <p>Ya, kami memberikan garansi dan maintenance sesuai paket yang dipilih</p>
+                <p>Ya, kami memberikan garansi revisi unlimited hingga Anda puas dengan hasilnya.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="final-cta" class="final-cta section">
+      <!-- Final CTA Section -->
+      <section id="contact" class="final-cta section">
         <div class="container">
           <div class="cta-content">
-            <h2>Siap Membangun Online Presence yang Kuat?</h2>
+            <h2>Ready Bikin Website Bisnis Anda?</h2>
             <p>
-              Jangan tunda lagi. Setiap hari tanpa website adalah opportunity yang terlewat untuk menjangkau lebih banyak pelanggan.
+              Jangan tunggu lagi. Competitor sudah duluan online, saatnya Anda menyusul!
             </p>
             <div class="cta-actions">
-              <a href="https://wa.me/6281234567890?text=Halo, saya ingin konsultasi tentang website" class="btn btn-primary" target="_blank">Konsultasi via WhatsApp</a>
+              <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan layanan website. Bisa konsultasi?" class="btn btn-primary btn-large" target="_blank">Chat via WhatsApp Sekarang</a>
             </div>
             <div class="cta-contact">
-              <p><strong>Email:</strong> hello@bikininwebsite.id</p>
-              <p class="cta-subtitle">Konsultasi gratis 30 menit untuk membahas kebutuhan website Anda</p>
+              <p><strong>Atau email ke:</strong> hello@bikininwebsite.id</p>
+              <p class="cta-guarantee">Konsultasi gratis 30 menit - No commitment!</p>
             </div>
           </div>
         </div>
@@ -410,45 +414,16 @@
               Web Developer untuk Bisnis Indonesia. Kami membantu bisnis lokal membangun online presence yang kuat dan profesional.
             </p>
             <div class="social-links">
-              <a href="https://wa.me/6281234567890" aria-label="WhatsApp" class="social-link" target="_blank">📱</a>
-              <a href="mailto:hello@bikininwebsite.id" aria-label="Email" class="social-link">✉️</a>
               <a href="#" aria-label="Instagram" class="social-link">📸</a>
+              <a href="#" aria-label="LinkedIn" class="social-link">💼</a>
+              <a href="https://wa.me/6281234567890" aria-label="WhatsApp" class="social-link" target="_blank">📱</a>
             </div>
-          </div>
-          
-          <div class="footer-section">
-            <h4 class="footer-subtitle">Layanan</h4>
-            <ul class="footer-links">
-              <li><a href="#services">Company Profile</a></li>
-              <li><a href="#services">Toko Online</a></li>
-              <li><a href="#services">Web App Custom</a></li>
-              <li><a href="#services">Maintenance</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h4 class="footer-subtitle">Perusahaan</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">Tentang Kami</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#process">Proses Kerja</a></li>
-              <li><a href="contact.html">Kontak</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h4 class="footer-subtitle">Support</h4>
-            <ul class="footer-links">
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="https://wa.me/6281234567890" target="_blank">WhatsApp Support</a></li>
-              <li><a href="mailto:hello@bikininwebsite.id">Email Support</a></li>
-              <li><a href="#">Dokumentasi</a></li>
-            </ul>
           </div>
         </div>
         
         <div class="footer-bottom">
-          <p>© <span id="year"></span> Bikinin Website. Seluruh hak cipta dilindungi.</p>
+          <p>© 2025 Bikinin Website - Web Developer Terpercaya Indonesia</p>
+          <p>Made with ❤️ for Indonesian Businesses</p>
         </div>
       </div>
     </footer>

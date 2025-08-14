@@ -1,5 +1,5 @@
 // Enhanced Bikinin Website functionality
-// Handle year, navigation, smooth scrolling, enhanced animations, and FAQ accordion
+// Handle year, navigation, smooth scrolling, enhanced animations, FAQ accordion, and single-page navigation
 (function () {
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
@@ -15,6 +15,7 @@
     initIntersectionObserver();
     initEnhancedInteractions();
     initFAQAccordion();
+    initStickyHeader();
   });
 
   // Navigation toggle functionality
@@ -35,7 +36,7 @@
     });
   }
 
-  // Smooth scrolling for navigation links
+  // Enhanced smooth scrolling for single-page navigation
   function initSmoothScrolling() {
     const navLinks = document.querySelectorAll('a[href^="#"]');
     
@@ -59,8 +60,75 @@
             menu.classList.remove('open');
             toggle.setAttribute('aria-expanded', 'false');
           }
+
+          // Update active navigation state
+          updateActiveNavigation(targetId);
         }
       });
+    });
+  }
+
+  // Update active navigation based on scroll position
+  function updateActiveNavigation(currentSectionId) {
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === currentSectionId) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  // Sticky header with scroll effects
+  function initStickyHeader() {
+    const header = document.querySelector('.site-header');
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      
+      // Add scrolled class for styling
+      if (currentScrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      
+      // Hide/show header on scroll (optional)
+      if (currentScrollY > lastScrollY && currentScrollY > 200) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      
+      lastScrollY = currentScrollY;
+      
+      // Update active navigation based on scroll position
+      updateActiveNavigationOnScroll();
+    });
+  }
+
+  // Update active navigation based on scroll position
+  function updateActiveNavigationOnScroll() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 200;
+      const sectionHeight = section.offsetHeight;
+      
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+      }
     });
   }
 
@@ -110,7 +178,7 @@
     }, observerOptions);
 
     // Observe all cards, stats, and new elements for animation
-    const animatedElements = document.querySelectorAll('.card, .stat, .service-card, .portfolio-card, .process-step, .testimonial-card');
+    const animatedElements = document.querySelectorAll('.card, .stat, .pricing-card, .portfolio-card, .process-step, .testimonial-card, .benefit-item');
     animatedElements.forEach(el => observer.observe(el));
   }
 
@@ -167,19 +235,19 @@
         badge.style.boxShadow = '';
       });
     });
-  }
 
-  // Add scroll-based header effects
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('.site-header');
-    if (header) {
-      if (window.scrollY > 100) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    }
-  });
+    // Pricing card interactions
+    const pricingCards = document.querySelectorAll('.pricing-card');
+    pricingCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-8px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+  }
 
   // Add loading states for buttons (if needed for future forms)
   function addLoadingState(button, isLoading) {

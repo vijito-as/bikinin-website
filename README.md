@@ -1,37 +1,39 @@
 # Bikinin Website
 
-Website profesional untuk layanan web development di Indonesia. Dibangun dengan desain modern, responsif, dan optimasi performa untuk membantu bisnis lokal membangun online presence yang kuat.
+**Single-Page Landing Page** untuk layanan web development di Indonesia. Dibangun dengan desain modern, responsif, dan optimasi performa untuk membantu bisnis lokal membangun online presence yang kuat.
 
 ## 🚀 Fitur Utama
 
-- **Design Modern**: Menggunakan inspirasi dari JAEYI portfolio dengan tipografi bold dan layout asimetris
+- **Single-Page Layout**: Semua konten dalam satu halaman scrollable
+- **Design Modern**: Menggunakan inspirasi dari portfolio websites dengan tipografi bold dan sections yang clean
 - **Fully Responsive**: Mobile-first design yang optimal di semua device
 - **Fast Loading**: Optimasi performa untuk user experience terbaik
 - **SEO Optimized**: Meta tags dan struktur yang SEO-friendly
+- **Conversion Focused**: Clear CTAs di seluruh halaman yang mengarah ke WhatsApp
 - **Interactive Elements**: FAQ accordion, hover effects, dan smooth scrolling
 
 ## 🎯 Layanan yang Ditawarkan
 
-### 1. Company Profile
-- Mulai dari Rp 5.000.000
-- 5-8 halaman profesional
-- Mobile responsive design
-- Basic SEO optimization
-- 1 bulan maintenance gratis
+### 1. STARTER (Rp 5 Juta)
+- Company Profile (5-8 halaman)
+- Mobile Responsive Design
+- Basic SEO Optimization
+- 1 bulan maintenance
+- Perfect untuk UMKM
 
-### 2. Toko Online
-- Mulai dari Rp 12.000.000
-- Product catalog lengkap
-- Shopping cart functionality
-- Payment gateway integration
-- Admin panel management
+### 2. BUSINESS (Rp 12 Juta) - **Best Seller!**
+- Toko Online Lengkap
+- Payment Gateway Integration
+- Product Management System
+- 3 bulan maintenance
+- E-commerce solution lengkap
 
-### 3. Aplikasi Web Custom
-- Mulai dari Rp 20.000.000
-- Custom functionality
-- Advanced admin dashboard
-- Database integration
-- Scalable architecture
+### 3. PREMIUM (Rp 20 Juta)
+- Custom Web Application
+- Advanced Features
+- Admin Dashboard
+- 6 bulan maintenance
+- Untuk bisnis serius
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -40,6 +42,7 @@ Website profesional untuk layanan web development di Indonesia. Dibangun dengan 
 - **Fonts**: Inter font family untuk tipografi yang modern
 - **Icons**: Emoji icons untuk visual elements
 - **Animations**: CSS animations dan JavaScript interactions
+- **Smooth Scrolling**: Native smooth scrolling dengan JavaScript enhancement
 
 ## 📱 Responsive Design
 
@@ -54,6 +57,7 @@ Website dioptimalkan untuk:
 ### Color Palette
 - **Primary**: Blue (#7aa2f7) untuk CTAs dan highlights
 - **Accent**: Purple (#c099ff) untuk secondary elements
+- **Accent Orange**: (#ff8a4c) untuk pricing dan emphasis
 - **Background**: Dark theme (#0b0d10) untuk profesional look
 - **Text**: Light colors untuk readability yang optimal
 
@@ -66,15 +70,12 @@ Website dioptimalkan untuk:
 
 ```
 bikinin-website/
-├── index.html          # Halaman utama dengan semua sections
-├── about.html          # Halaman tentang kami
-├── contact.html        # Halaman kontak dan form
+├── index.html          # Single-page landing page dengan semua sections
 ├── assets/
 │   ├── css/
 │   │   └── styles.css  # Semua styling dan responsive design
 │   └── js/
-│       ├── main.js     # JavaScript functionality
-│       └── form.js     # Form handling (jika ada)
+│       └── main.js     # JavaScript functionality untuk single-page
 └── README.md
 ```
 
@@ -99,11 +100,12 @@ bikinin-website/
 
 ## ✨ Keunggulan
 
-- **Komunikasi Transparan**: Update progress project secara berkala
-- **Response Time 24 Jam**: Support maksimal 24 jam
-- **Garansi Revisi**: Hingga klien puas dengan hasil
-- **Full Service**: Domain, hosting, dan maintenance
-- **Pembayaran Fleksibel**: Sistem cicilan yang nyaman
+- **Response WhatsApp dalam 2 jam**: Komunikasi cepat dan responsif
+- **Garansi revisi unlimited**: Hingga klien puas dengan hasil
+- **Domain + hosting kami urus**: Full service solution
+- **Bisa bayar cicil 2x**: Sistem pembayaran yang fleksibel
+- **Website siap dalam 2 minggu**: Delivery time yang cepat
+- **Maintenance & support 24/7**: Dukungan berkelanjutan
 
 ## 📈 Metrics & Performance
 
@@ -111,6 +113,7 @@ bikinin-website/
 - **SEO Score**: Meta tags dan struktur yang optimal
 - **Accessibility**: WCAG compliant untuk semua users
 - **Mobile Performance**: Mobile-first approach
+- **Conversion Rate**: CTAs yang jelas dan strategis
 
 ## 🔄 Update & Maintenance
 
@@ -119,10 +122,33 @@ Website ini dirancang untuk mudah diupdate dan maintain:
 - Semantic HTML
 - Clean JavaScript code
 - Responsive images dan assets
+- Single-page architecture untuk maintenance yang mudah
+
+## 🎨 Design Elements
+
+- **Bold Typography**: Large headings yang grab attention
+- **Card Hover Effects**: Subtle shadows dan lifting pada hover
+- **Icon Integration**: Untuk benefits, process steps, dan features
+- **Color Gradients**: Untuk CTA sections dan cards
+- **Floating Elements**: Credential badges di sekitar hero
+- **Clean Spacing**: Generous whitespace antara sections
+- **Professional Mockups**: Placeholder images untuk portfolio
+
+## 🚀 Conversion Strategy
+
+### Key CTAs Throughout:
+- **Header**: "Konsultasi Gratis"
+- **Hero**: "Konsultasi via WhatsApp"
+- **Each Pricing Card**: "Pesan Sekarang"
+- **Final Section**: "Chat via WhatsApp Sekarang"
+
+### WhatsApp Integration:
+Semua CTAs membuka WhatsApp dengan pre-filled message:
+"Halo, saya tertarik dengan layanan website. Bisa konsultasi?"
 
 ## 📄 License
 
-© 2024 Bikinin Website. Dibuat dengan ❤️ untuk bisnis Indonesia.
+© 2025 Bikinin Website - Web Developer Terpercaya Indonesia
 
 ---
 
