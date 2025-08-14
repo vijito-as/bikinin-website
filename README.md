@@ -1,144 +1,129 @@
-# Nova Design System Website
+# Bikinin Website
 
-A modern, performance-focused design system website built with HTML, CSS, and JavaScript. Nova provides a comprehensive solution for building exceptional web experiences that are fast, accessible, and beautiful.
+Website profesional untuk layanan web development di Indonesia. Dibangun dengan desain modern, responsif, dan optimasi performa untuk membantu bisnis lokal membangun online presence yang kuat.
 
-## ✨ Features
+## 🚀 Fitur Utama
 
-### Visual Hierarchy & Typography
-- **Large Headlines**: Main headline "Build fast. Look sharp." uses 3.5rem font size with font-weight 800
-- **Enhanced Typography**: Improved typography scale with better contrast between heading levels
-- **Gradient Text**: Beautiful gradient effects on headlines and section titles
-- **Clear Taglines**: Brand tagline "Design System" under the logo
+- **Design Modern**: Menggunakan inspirasi dari JAEYI portfolio dengan tipografi bold dan layout asimetris
+- **Fully Responsive**: Mobile-first design yang optimal di semua device
+- **Fast Loading**: Optimasi performa untuk user experience terbaik
+- **SEO Optimized**: Meta tags dan struktur yang SEO-friendly
+- **Interactive Elements**: FAQ accordion, hover effects, dan smooth scrolling
 
-### Content Clarity & Messaging
-- **Specific Value Proposition**: Clear subtitle explaining Nova's purpose and benefits
-- **Concrete Feature Descriptions**: Detailed, actionable descriptions for each feature
-- **Performance Metrics**: Specific performance claims (3x faster loading, 99.9% uptime)
-- **Accessibility Focus**: WCAG 2.1 AA compliance emphasis
+## 🎯 Layanan yang Ditawarkan
 
-### Interactive Elements & CTAs
-- **Primary CTA**: "Learn more" as the main call-to-action with enhanced styling
-- **Secondary CTA**: "Try Demo" as secondary action with outline button style
-- **Hover Effects**: Subtle scale transforms (scale: 1.05) and smooth animations
-- **Enhanced Buttons**: Better visual hierarchy and interaction states
+### 1. Company Profile
+- Mulai dari Rp 5.000.000
+- 5-8 halaman profesional
+- Mobile responsive design
+- Basic SEO optimization
+- 1 bulan maintenance gratis
 
-### Layout & Integration
-- **Integrated Benefits**: "Why Nova?" section integrated into main content flow
-- **Proper Benefits Section**: With icons and better visual hierarchy
-- **Consistent Spacing**: Between sections (mb-16/mb-20 equivalent)
-- **Social Proof Section**: With usage statistics and testimonials
+### 2. Toko Online
+- Mulai dari Rp 12.000.000
+- Product catalog lengkap
+- Shopping cart functionality
+- Payment gateway integration
+- Admin panel management
 
-### Enhanced Footer
-- **Multi-column Layout**: Company, Resources, Legal, and Social sections
-- **Company Description**: Brief explanation of Nova's mission
-- **Contact Information**: Multiple ways to get in touch
-- **Social Media**: Integration with social platforms
+### 3. Aplikasi Web Custom
+- Mulai dari Rp 20.000.000
+- Custom functionality
+- Advanced admin dashboard
+- Database integration
+- Scalable architecture
 
-## 🚀 Technical Features
+## 🛠️ Teknologi yang Digunakan
 
-### Performance & Accessibility
-- **WCAG 2.1 AA Compliant**: Built with accessibility in mind
-- **Performance Optimized**: Lazy loading, tree-shaking ready
-- **Semantic HTML**: Proper structure for SEO and screen readers
-- **Focus Management**: Enhanced keyboard navigation
-
-### Modern Web Technologies
-- **CSS Custom Properties**: Comprehensive design token system
-- **CSS Grid & Flexbox**: Modern layout techniques
-- **CSS Animations**: Smooth, performant animations
-- **Responsive Images**: Optimized for all device sizes
-
-### Enhanced Interactions
-- **Smooth Scrolling**: Navigation with smooth scroll behavior
-- **Intersection Observer**: Scroll-triggered animations
-- **Micro-interactions**: Subtle hover and focus effects
-- **Loading States**: Form submission and button states
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Styling**: Custom CSS dengan CSS Variables dan Flexbox/Grid
+- **Fonts**: Inter font family untuk tipografi yang modern
+- **Icons**: Emoji icons untuk visual elements
+- **Animations**: CSS animations dan JavaScript interactions
 
 ## 📱 Responsive Design
 
-- **Mobile-First**: Designed for mobile devices first
-- **Breakpoint System**: Consistent responsive breakpoints
-- **Touch-Friendly**: Optimized for touch interactions
-- **Performance**: Fast loading on all devices
+Website dioptimalkan untuk:
+- Mobile devices (320px+)
+- Tablets (768px+)
+- Desktop (1024px+)
+- Large screens (1440px+)
 
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: Blue (#7aa2f7) for main actions and highlights
-- **Accent**: Purple (#c099ff) for brand elements
-- **Background**: Dark theme (#0b0d10) with subtle gradients
-- **Text**: High contrast white (#e6e9ef) for readability
+- **Primary**: Blue (#7aa2f7) untuk CTAs dan highlights
+- **Accent**: Purple (#c099ff) untuk secondary elements
+- **Background**: Dark theme (#0b0d10) untuk profesional look
+- **Text**: Light colors untuk readability yang optimal
 
 ### Typography
-- **Font Family**: Inter for modern, readable text
-- **Font Weights**: 400, 500, 600, 700, 800 for hierarchy
-- **Responsive Sizing**: Fluid typography with clamp()
-- **Line Heights**: Optimized for readability
+- **Headings**: Inter Bold (700-800) untuk hierarchy yang jelas
+- **Body**: Inter Regular (400) untuk readability
+- **CTAs**: Inter Semi-bold (600) untuk emphasis
 
-### Components
-- **Cards**: Glass morphism effect with backdrop-filter
-- **Buttons**: Multiple styles with hover and focus states
-- **Forms**: Accessible form elements with validation
-- **Navigation**: Sticky header with smooth interactions
-
-## 📁 File Structure
+## 📁 Struktur File
 
 ```
-test-project/
-├── index.html          # Main homepage
-├── about.html          # About page
-├── contact.html        # Contact page
+bikinin-website/
+├── index.html          # Halaman utama dengan semua sections
+├── about.html          # Halaman tentang kami
+├── contact.html        # Halaman kontak dan form
 ├── assets/
 │   ├── css/
-│   │   └── styles.css  # Main stylesheet
+│   │   └── styles.css  # Semua styling dan responsive design
 │   └── js/
-│       ├── main.js     # Core functionality
-│       └── form.js     # Form handling
-└── README.md           # This file
+│       ├── main.js     # JavaScript functionality
+│       └── form.js     # Form handling (jika ada)
+└── README.md
 ```
 
-## 🛠️ Getting Started
+## 🔧 Cara Menjalankan
 
-1. **Clone or Download**: Get the project files
-2. **Open in Browser**: Open `index.html` in a modern web browser
-3. **Customize**: Modify colors, content, and styling in `styles.css`
-4. **Deploy**: Upload to your web server
+1. Clone repository ini
+2. Buka file `index.html` di browser
+3. Atau gunakan local server seperti Live Server di VS Code
 
-## 🌟 Key Improvements Made
+## 📞 Kontak
 
-### Before → After
-- **Generic subtitle** → **Specific value proposition**
-- **Basic feature cards** → **Detailed benefit descriptions**
-- **Simple footer** → **Multi-column comprehensive footer**
-- **Basic animations** → **Enhanced micro-interactions**
-- **Limited CTAs** → **Clear primary/secondary action hierarchy**
-- **Disconnected sidebar** → **Integrated benefits section**
-- **Basic responsive** → **Mobile-first responsive design**
+- **WhatsApp**: [Konsultasi via WhatsApp](https://wa.me/6281234567890)
+- **Email**: hello@bikininwebsite.id
+- **Konsultasi Gratis**: 30 menit untuk membahas kebutuhan website
 
 ## 🎯 Target Audience
 
-- **Frontend Developers**: Looking for a design system to implement
-- **Design Teams**: Seeking consistent UI components
-- **Product Managers**: Wanting to improve user experience
-- **Accessibility Advocates**: Requiring WCAG compliance
-- **Performance Engineers**: Focusing on fast loading times
+- Bisnis lokal Indonesia yang belum memiliki website
+- Startup yang ingin membangun online presence
+- Perusahaan yang ingin upgrade website lama
+- Bisnis yang ingin membuat toko online
 
-## 🔮 Future Enhancements
+## ✨ Keunggulan
 
-- **Component Library**: React/Vue component versions
-- **Design Tokens**: CSS-in-JS and design token exports
-- **Documentation Site**: Comprehensive component documentation
-- **Theme System**: Light/dark theme switching
-- **Internationalization**: Multi-language support
+- **Komunikasi Transparan**: Update progress project secara berkala
+- **Response Time 24 Jam**: Support maksimal 24 jam
+- **Garansi Revisi**: Hingga klien puas dengan hasil
+- **Full Service**: Domain, hosting, dan maintenance
+- **Pembayaran Fleksibel**: Sistem cicilan yang nyaman
+
+## 📈 Metrics & Performance
+
+- **Loading Speed**: Optimized untuk Core Web Vitals
+- **SEO Score**: Meta tags dan struktur yang optimal
+- **Accessibility**: WCAG compliant untuk semua users
+- **Mobile Performance**: Mobile-first approach
+
+## 🔄 Update & Maintenance
+
+Website ini dirancang untuk mudah diupdate dan maintain:
+- Modular CSS structure
+- Semantic HTML
+- Clean JavaScript code
+- Responsive images dan assets
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
+© 2024 Bikinin Website. Dibuat dengan ❤️ untuk bisnis Indonesia.
 
 ---
 
-Built with ❤️ for developers who care about quality and performance.
+**Bikinin Website** - Web Developer untuk Bisnis Indonesia

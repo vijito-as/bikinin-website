@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kontak — Sistem Desain Nova</title>
-    <meta name="description" content="Hubungi tim Nova. Kami senang mendengar kebutuhan proyek Anda." />
+    <title>Kontak — Bikinin Website</title>
+    <meta name="description" content="Hubungi tim Bikinin Website. Kami siap membantu Anda membangun website profesional untuk bisnis Indonesia." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -13,9 +13,9 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="Beranda Nova">
-          <span class="brand-accent">✦</span> Nova
-          <span class="brand-tagline">Design System</span>
+        <a href="index.html" class="brand" aria-label="Beranda Bikinin Website">
+          <span class="brand-accent">✦</span> Bikinin Website
+          <span class="brand-tagline">Web Developer</span>
         </a>
         <nav class="site-nav" aria-label="Navigasi utama">
           <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Buka/tutup navigasi">
@@ -26,9 +26,10 @@
           <ul id="menu" class="menu">
             <li><a class="nav-link" href="index.html">Beranda</a></li>
             <li><a class="nav-link" href="about.html">Tentang</a></li>
-            <li><a class="nav-link" href="index.html#features">Fitur</a></li>
-            <li><a class="nav-link" href="index.html#benefits">Manfaat</a></li>
-            <li><a class="nav-link cta active" href="contact.html">Mulai</a></li>
+            <li><a class="nav-link" href="index.html#services">Layanan</a></li>
+            <li><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="index.html#process">Proses</a></li>
+            <li><a class="nav-link cta active" href="contact.html">Konsultasi</a></li>
           </ul>
         </nav>
       </div>
@@ -38,10 +39,10 @@
       <section class="hero section fade-seq">
         <div class="container">
           <div class="hero-content">
-            <h1 class="display">Mari Bangun Sesuatu yang Menakjubkan</h1>
+            <h1 class="display">Mari Bangun Website Profesional</h1>
             <p class="lede">
-              Siap memulai dengan Nova? Kami siap membantu Anda mengimplementasikan sistem desain kami 
-              dan menciptakan pengalaman pengguna yang luar biasa.
+              Siap untuk transformasi digital bisnis Anda? Kami siap membantu Anda membangun website 
+              yang profesional, responsif, dan dapat meningkatkan penjualan.
             </p>
           </div>
         </div>
@@ -53,32 +54,35 @@
             <div class="contact-info">
               <h2 class="section-title">Hubungi Kami</h2>
               <p class="section-subtitle">
-                Baik Anda memiliki pertanyaan tentang Nova, butuh bantuan implementasi, atau ingin membahas 
-                solusi khusus, kami dengan senang hati mendengarnya.
+                Baik Anda memiliki pertanyaan tentang layanan kami, butuh konsultasi website, atau ingin 
+                memulai project, kami dengan senang hati membantu Anda.
               </p>
               
               <div class="contact-methods">
                 <div class="contact-method">
+                  <div class="contact-icon">📱</div>
+                  <div>
+                    <h3>WhatsApp</h3>
+                    <p>Konsultasi cepat via WhatsApp</p>
+                    <a href="https://wa.me/6281234567890?text=Halo, saya ingin konsultasi tentang website" class="btn btn-primary" target="_blank">Chat WhatsApp</a>
+                  </div>
+                </div>
+                
+                <div class="contact-method">
                   <div class="contact-icon">📧</div>
                   <div>
                     <h3>Email</h3>
-                    <p>hello@nova.design</p>
+                    <p>hello@bikininwebsite.id</p>
+                    <a href="mailto:hello@bikininwebsite.id" class="btn btn-secondary">Kirim Email</a>
                   </div>
                 </div>
                 
                 <div class="contact-method">
                   <div class="contact-icon">💬</div>
                   <div>
-                    <h3>Chat</h3>
-                    <p>Tersedia selama jam kerja</p>
-                  </div>
-                </div>
-                
-                <div class="contact-method">
-                  <div class="contact-icon">📱</div>
-                  <div>
-                    <h3>Telepon</h3>
-                    <p>+1 (555) 123-4567</p>
+                    <h3>Konsultasi Gratis</h3>
+                    <p>30 menit konsultasi gratis untuk membahas kebutuhan website Anda</p>
+                    <a href="https://wa.me/6281234567890?text=Halo, saya ingin booking konsultasi gratis 30 menit" class="btn btn-primary" target="_blank">Booking Konsultasi</a>
                   </div>
                 </div>
               </div>
@@ -91,46 +95,90 @@
                   <form class="contact-form" id="contactForm">
                     <div class="grid-form">
                       <div class="form-field">
-                        <label for="name">Nama</label>
+                        <label for="name">Nama Lengkap *</label>
                         <input type="text" id="name" name="name" required />
                       </div>
                       
                       <div class="form-field">
-                        <label for="email">Email</label>
+                        <label for="email">Email *</label>
                         <input type="email" id="email" name="email" required />
                       </div>
                       
                       <div class="form-field span-2">
-                        <label for="company">Perusahaan (Opsional)</label>
-                        <input type="text" id="company" name="company" />
+                        <label for="company">Nama Perusahaan/Bisnis</label>
+                        <input type="text" id="company" name="company" placeholder="Opsional" />
                       </div>
                       
                       <div class="form-field span-2">
-                        <label for="subject">Subjek</label>
-                        <select id="subject" name="subject" required>
-                          <option value="">Pilih topik</option>
-                          <option value="general">Pertanyaan Umum</option>
-                          <option value="implementation">Bantuan Implementasi</option>
-                          <option value="custom">Solusi Khusus</option>
-                          <option value="partnership">Kemitraan</option>
+                        <label for="phone">Nomor Telepon/WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Untuk komunikasi lebih lanjut" />
+                      </div>
+                      
+                      <div class="form-field span-2">
+                        <label for="service">Jenis Layanan yang Diminati</label>
+                        <select id="service" name="service" required>
+                          <option value="">Pilih layanan</option>
+                          <option value="company-profile">Company Profile</option>
+                          <option value="e-commerce">Toko Online</option>
+                          <option value="web-app">Aplikasi Web Custom</option>
+                          <option value="maintenance">Maintenance Website</option>
+                          <option value="consultation">Konsultasi Umum</option>
                           <option value="other">Lainnya</option>
                         </select>
                       </div>
                       
                       <div class="form-field span-2">
-                        <label for="message">Pesan</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Ceritakan tentang proyek atau pertanyaan Anda..."></textarea>
+                        <label for="budget">Budget (Opsional)</label>
+                        <select id="budget" name="budget">
+                          <option value="">Pilih range budget</option>
+                          <option value="5-10">Rp 5 - 10 juta</option>
+                          <option value="10-20">Rp 10 - 20 juta</option>
+                          <option value="20-50">Rp 20 - 50 juta</option>
+                          <option value="50+">Rp 50 juta ke atas</option>
+                          <option value="discuss">Mau diskusi dulu</option>
+                        </select>
+                      </div>
+                      
+                      <div class="form-field span-2">
+                        <label for="timeline">Timeline Project (Opsional)</label>
+                        <select id="timeline" name="timeline">
+                          <option value="">Pilih timeline</option>
+                          <option value="asap">ASAP / Secepatnya</option>
+                          <option value="1-month">1 bulan</option>
+                          <option value="2-3-months">2-3 bulan</option>
+                          <option value="3+months">3+ bulan</option>
+                          <option value="flexible">Fleksibel</option>
+                        </select>
+                      </div>
+                      
+                      <div class="form-field span-2">
+                        <label for="message">Deskripsi Project/Pertanyaan *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Ceritakan tentang kebutuhan website Anda, fitur yang diinginkan, atau pertanyaan lainnya..."></textarea>
                       </div>
                       
                       <div class="form-field span-2">
                         <button type="submit" class="btn btn-primary">
                           Kirim Pesan
                         </button>
+                        <p class="form-note">* Wajib diisi. Kami akan menghubungi Anda dalam 24 jam.</p>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Jangan Tunda Lagi!</h2>
+            <p>Setiap hari tanpa website adalah opportunity yang terlewat untuk menjangkau lebih banyak pelanggan.</p>
+            <div class="actions">
+              <a href="https://wa.me/6281234567890?text=Halo, saya ingin konsultasi tentang website" class="btn btn-primary" target="_blank">Konsultasi via WhatsApp</a>
+              <a href="mailto:hello@bikininwebsite.id" class="btn btn-secondary">Kirim Email</a>
             </div>
           </div>
         </div>
@@ -141,52 +189,51 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3 class="footer-title">Nova</h3>
+            <h3 class="footer-title">Bikinin Website</h3>
             <p class="footer-description">
-              Sistem desain yang berfokus pada performa untuk aplikasi web modern. 
-              Dibangun dengan mempertimbangkan aksesibilitas, performa, dan pengalaman pengembang.
+              Web Developer untuk Bisnis Indonesia. Kami membantu bisnis lokal membangun online presence yang kuat dan profesional.
             </p>
             <div class="social-links">
-              <a href="#" aria-label="GitHub" class="social-link">📱</a>
-              <a href="#" aria-label="Twitter" class="social-link">🐦</a>
-              <a href="#" aria-label="LinkedIn" class="social-link">💼</a>
+              <a href="https://wa.me/6281234567890" aria-label="WhatsApp" class="social-link" target="_blank">📱</a>
+              <a href="mailto:hello@bikininwebsite.id" aria-label="Email" class="social-link">✉️</a>
+              <a href="#" aria-label="Instagram" class="social-link">📸</a>
             </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Layanan</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#services">Company Profile</a></li>
+              <li><a href="index.html#services">Toko Online</a></li>
+              <li><a href="index.html#services">Web App Custom</a></li>
+              <li><a href="index.html#services">Maintenance</a></li>
+            </ul>
           </div>
           
           <div class="footer-section">
             <h4 class="footer-subtitle">Perusahaan</h4>
             <ul class="footer-links">
-              <li><a href="about.html">Tentang</a></li>
-              <li><a href="#">Karier</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li><a href="index.html#process">Proses Kerja</a></li>
               <li><a href="contact.html">Kontak</a></li>
             </ul>
           </div>
           
           <div class="footer-section">
-            <h4 class="footer-subtitle">Sumber Daya</h4>
+            <h4 class="footer-subtitle">Support</h4>
             <ul class="footer-links">
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="https://wa.me/6281234567890" target="_blank">WhatsApp Support</a></li>
+              <li><a href="mailto:hello@bikininwebsite.id">Email Support</a></li>
               <li><a href="#">Dokumentasi</a></li>
-              <li><a href="#">Contoh</a></li>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Komunitas</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h4 class="footer-subtitle">Legal</h4>
-            <ul class="footer-links">
-              <li><a href="#">Kebijakan Privasi</a></li>
-              <li><a href="#">Ketentuan Layanan</a></li>
-              <li><a href="#">Keamanan</a></li>
-              <li><a href="#">Kebijakan Cookie</a></li>
             </ul>
           </div>
         </div>
         
         <div class="footer-bottom">
-          <p>© <span id="year"></span> Nova. Seluruh hak cipta dilindungi.</p>
-          <p>Dibuat dengan ❤️ untuk pengembang</p>
+          <p>© <span id="year"></span> Bikinin Website. Seluruh hak cipta dilindungi.</p>
+          <p>Dibuat dengan ❤️ untuk bisnis Indonesia</p>
         </div>
       </div>
     </footer>

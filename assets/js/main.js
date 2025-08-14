@@ -1,5 +1,5 @@
-// Enhanced Nova website functionality
-// Handle year, navigation, smooth scrolling, and enhanced animations
+// Enhanced Bikinin Website functionality
+// Handle year, navigation, smooth scrolling, enhanced animations, and FAQ accordion
 (function () {
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
@@ -14,6 +14,7 @@
     initSmoothScrolling();
     initIntersectionObserver();
     initEnhancedInteractions();
+    initFAQAccordion();
   });
 
   // Navigation toggle functionality
@@ -63,6 +64,36 @@
     });
   }
 
+  // FAQ Accordion functionality
+  function initFAQAccordion() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      
+      if (question && answer) {
+        question.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+          
+          // Close all other FAQ items
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+            }
+          });
+          
+          // Toggle current item
+          if (isActive) {
+            item.classList.remove('active');
+          } else {
+            item.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
   // Intersection Observer for enhanced animations
   function initIntersectionObserver() {
     const observerOptions = {
@@ -78,8 +109,8 @@
       });
     }, observerOptions);
 
-    // Observe all cards and stats for animation
-    const animatedElements = document.querySelectorAll('.card, .stat');
+    // Observe all cards, stats, and new elements for animation
+    const animatedElements = document.querySelectorAll('.card, .stat, .service-card, .portfolio-card, .process-step, .testimonial-card');
     animatedElements.forEach(el => observer.observe(el));
   }
 
@@ -120,6 +151,20 @@
       
       link.addEventListener('mouseleave', () => {
         link.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Credential badge interactions
+    const credentialBadges = document.querySelectorAll('.credential-badge');
+    credentialBadges.forEach(badge => {
+      badge.addEventListener('mouseenter', () => {
+        badge.style.transform = 'translateY(-15px) scale(1.1)';
+        badge.style.boxShadow = '0 15px 30px rgba(122, 162, 247, 0.3)';
+      });
+      
+      badge.addEventListener('mouseleave', () => {
+        badge.style.transform = '';
+        badge.style.boxShadow = '';
       });
     });
   }
@@ -165,6 +210,23 @@
       });
     }
   });
+
+  // Add WhatsApp tracking for analytics (optional)
+  function trackWhatsAppClick(button) {
+    const whatsappButtons = document.querySelectorAll('a[href*="wa.me"]');
+    whatsappButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Track WhatsApp click event (replace with your analytics code)
+        console.log('WhatsApp consultation clicked');
+        
+        // You can add Google Analytics or other tracking here
+        // gtag('event', 'click', { 'event_category': 'engagement', 'event_label': 'whatsapp_consultation' });
+      });
+    });
+  }
+
+  // Initialize WhatsApp tracking
+  trackWhatsAppClick();
 
 })();
 
