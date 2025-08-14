@@ -16,7 +16,30 @@
     initEnhancedInteractions();
     initFAQAccordion();
     initStickyHeader();
+    initLogoClick();
   });
+
+  // Logo click functionality - scroll to top
+  function initLogoClick() {
+    const logo = document.querySelector('.brand');
+    if (logo) {
+      logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        
+        // Close mobile menu if open
+        const menu = document.getElementById('menu');
+        const toggle = document.querySelector('.nav-toggle');
+        if (menu && menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  }
 
   // Navigation toggle functionality
   const toggle = document.querySelector('.nav-toggle');

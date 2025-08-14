@@ -73,7 +73,18 @@ button { font-family: inherit; }
   gap: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all .3s ease;
 }
+
+.brand:hover {
+  transform: scale(1.05);
+}
+
+.brand:active {
+  transform: scale(0.98);
+}
+
 .brand-accent { color: var(--accent); filter: drop-shadow(0 0 12px rgba(192, 153, 255, 0.5)); }
 .brand-tagline {
   font-size: 0.75rem;
@@ -1540,12 +1551,23 @@ blockquote {
 /* Enhanced header effects */
 .site-header {
   transition: all .3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .site-header.scrolled {
   background: linear-gradient(180deg, rgba(11, 13, 16, 0.98), rgba(11, 13, 16, 0.95));
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure header is always visible */
+.site-header {
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Active navigation states */
